@@ -15,6 +15,7 @@ export const CardContainer = styled((props: HTMLAttributes<HTMLDivElement>) => <
     cursor: pointer;
 }
 `;
+
 export const CardInnerHeading = styled((props: HTMLAttributes<HTMLHeadingElement>) => <h1 {...props} />)`
   font-family: Poppins;
   font-weight: 700;
@@ -25,6 +26,7 @@ ${CardContainer}:hover & {
 	text-decoration: underline;
 }
 `;
+
 export const CardInnerText = styled((props: HTMLAttributes<HTMLParagraphElement>) => <p {...props} />)`
   font-family: Poppins;
   font-size: 1rem;
@@ -32,6 +34,10 @@ export const CardInnerText = styled((props: HTMLAttributes<HTMLParagraphElement>
   font-weight: 400;
   color: black;
 	margin-top: 5px;
+
+  b {
+    font-weight: bold;
+  }
 `;
 
 export const CardInfoContainer = styled((props: HTMLAttributes<HTMLDivElement>) => <div {...props} />)`

@@ -17,21 +17,21 @@ const mainProps = {
       image: { src: "/img/brief.png", alt: "", width: 100, height: 80 },
       title: "Brief",
       description:
-        "Complete brief writing or simple guidance on what to include, we've got you covered.",
+        "Complete <b>brief writing or simple guidance</b> on what to include, we've got you covered.",
     },
     {
       id: 2,
       image: { src: "/img/search.png", alt: "", width: 100, height: 90 },
       title: "Search",
       description:
-        "In depth agency search covering; criteria matching, door knocking and due-dilligence vetting.",
+        "In depth agency search covering; <b>criteria matching</b>, door knocking and due-dilligence vetting.",
     },
     {
       id: 3,
       image: { src: "/img/pitch.png", alt: "", width: 100, height: 80 },
       title: "Pitch",
       description:
-        "Comprehensive pitch management including comms, diary managment and pitch hosting."
+        "Comprehensive <b>pitch management</b> including comms, diary managment and pitch hosting."
     },
   ],
 };

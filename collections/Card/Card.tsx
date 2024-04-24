@@ -5,6 +5,10 @@ import { CardProps } from '../../types/types';
 
 export const Card: FC<{ card: CardProps }> = ({ card }) => {
 	const { image, title, description } = card;
+	const boldedDescription = description.replace(
+		/<b>(.*?)<\/b>/g,
+		"<b>$1</b>"
+	);
 	return (
 		<CardContainer >
 			<ImageContainer>
@@ -12,7 +16,7 @@ export const Card: FC<{ card: CardProps }> = ({ card }) => {
 			</ImageContainer>
 			<CardInfoContainer>
 				<CardInnerHeading>{card.title}</CardInnerHeading>
-				<CardInnerText>{card.description}</CardInnerText>
+				<CardInnerText dangerouslySetInnerHTML={{ __html: boldedDescription }} />
 			</CardInfoContainer>
 		</CardContainer>
 	);
