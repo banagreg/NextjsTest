@@ -9,9 +9,8 @@ export const MainContainer = styled((props) => <div {...props} />)`
 	flex-direction: column;
 	margin: 5rem auto;
 	background-image: url('/img/background.png');
-  background-size: cover;
-  background-position: center;
-	background-attachment: fixed;
+	background-repeat: no-repeat;
+  background-size: contain;
 `;
 
 export const Heading = styled((props) => (
