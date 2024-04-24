@@ -8,9 +8,10 @@ export const MainContainer = styled((props) => <div {...props} />)`
 	align-items: center;
 	flex-direction: column;
 	margin: 5rem auto;
-	background-image: url('public/img/background.png');
+	background-image: url('/img/background.png');
   background-size: cover;
   background-position: center;
+	background-attachment: fixed;
 `;
 
 export const Heading = styled((props) => (
