@@ -1,7 +1,10 @@
 import styled from "styled-components";
-import { Button, SectionContainer, SectionBigHeading, SectionSubheading } from "~/components";
+import { StyledSectionContainer } from "../../components/Containers/SectionContainer/elements";
+import { StyledSectionBigHeading } from "../../components/Typography/elements";
+import { SectionSubheading } from "../../components/Typography/SectionSubheading";
+import { Button } from "../../components/Button/Button";
 
-export const StyledContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
+export const StyledContainer = styled(({ height, ...props }) => <StyledSectionContainer {...props} />)`
   align-items: center;
 `;
 
@@ -11,7 +14,7 @@ export const StyledGetStartedBtn = styled((props) => <Button {...props} variant=
   padding-bottom: 0;
 `;
 
-export const StyledTitle = styled((props) => <SectionBigHeading {...props} />)`
+export const StyledTitle = styled((props) => <StyledSectionBigHeading {...props} />)`
   margin: 0;
   color: black;
 `;
