@@ -1,6 +1,7 @@
+import { HTMLAttributes } from 'react';
 import styled from 'styled-components'
 
-export const CardContainer = styled(({ ...props }) => <div {...props} />)`
+export const CardContainer = styled((props: HTMLAttributes<HTMLDivElement>) => <div {...props} />)`
   display: flex;
   align-items: center;
   width: 100%;
@@ -14,7 +15,7 @@ export const CardContainer = styled(({ ...props }) => <div {...props} />)`
     cursor: pointer;
 }
 `;
-export const CardInnerHeading = styled(({ ...props }) => <h1 {...props} />)`
+export const CardInnerHeading = styled((props: HTMLAttributes<HTMLHeadingElement>) => <h1 {...props} />)`
   font-family: Poppins;
   font-weight: 700;
   font-size: 1.20rem;
@@ -24,7 +25,7 @@ ${CardContainer}:hover & {
 	text-decoration: underline;
 }
 `;
-export const CardInnerText = styled((props) => <p {...props} />)`
+export const CardInnerText = styled((props: HTMLAttributes<HTMLParagraphElement>) => <p {...props} />)`
   font-family: Poppins;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -33,15 +34,15 @@ export const CardInnerText = styled((props) => <p {...props} />)`
 	margin-top: 5px;
 `;
 
-export const CardInfoContainer = styled(({ ...props }) => <div {...props} />)`
+export const CardInfoContainer = styled((props: HTMLAttributes<HTMLDivElement>) => <div {...props} />)`
   display: flex;
-  flex-grow: 1; 
+  flex-grow: 1;
   flex-direction: column;
   justify-content: center;
   padding-right: 20px;
 `;
 
-export const ImageContainer = styled(({ ...props }) => <div {...props} />)`
+export const ImageContainer = styled((props: HTMLAttributes<HTMLDivElement>) => <div {...props} />)`
   display: flex;
   max-width: 5rem;
   max-height: 5rem;

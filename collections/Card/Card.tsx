@@ -1,9 +1,9 @@
-
+import { FC } from 'react';
 import Image from 'next/image'
-
 import { CardContainer, CardInfoContainer, CardInnerHeading, CardInnerText, ImageContainer } from "./elements"
+import { CardProps } from '../../types/types';
 
-export const Card = ({ card }) => {
+export const Card: FC<{ card: CardProps }> = ({ card }) => {
 	const { image, title, description } = card;
 	return (
 		<CardContainer >

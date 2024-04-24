@@ -1,5 +1,5 @@
-import { Hero } from "../sections";
-import { Main } from "../sections/Main/Main";
+import { Hero } from "../sections"
+import { Main } from "../sections/Main/Main"
 import Head from 'next/head'
 
 const heroProps = {
@@ -31,8 +31,7 @@ const mainProps = {
       image: { src: "/img/pitch.png", alt: "", width: 100, height: 80 },
       title: "Pitch",
       description:
-        "Comprehensive pitch management including comms, diary managment and pitch hosting.",
-      underline: "true",
+        "Comprehensive pitch management including comms, diary managment and pitch hosting."
     },
   ],
 };
@@ -55,4 +54,4 @@ export default function Home() {
       </div>
     </>
   );
-}
+};

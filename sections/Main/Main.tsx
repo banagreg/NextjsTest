@@ -1,7 +1,10 @@
 import Image from "next/image";
 import { MainContainer, Heading, SubHeading, InfoContainer, CardsContainer, ImageWrapper } from "./elements";
 import { Card } from "../../collections/Card/Card";
-export const Main = (props) => {
+import { FC } from "react";
+import { MainProps } from "../../types/types";
+
+export const Main: FC<MainProps> = (props) => {
 	const { image, cardsData } = props;
 
 	return (

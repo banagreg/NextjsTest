@@ -2,8 +2,10 @@ import styled from 'styled-components'
 import { SectionSubheading } from '../../components/Typography/SectionSubheading'
 import { StyledSectionContainer } from '../../components/Containers/SectionContainer/elements'
 import { SectionHeading } from '../../components/Typography/SectionHeading'
+import { HTMLAttributes } from 'react';
 
-export const MainContainer = styled((props) => <div {...props} />)`
+
+export const MainContainer = styled((props: HTMLAttributes<HTMLDivElement>) => <div {...props} />)`
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -13,7 +15,7 @@ export const MainContainer = styled((props) => <div {...props} />)`
   background-size: contain;
 `;
 
-export const Heading = styled((props) => (
+export const Heading = styled((props: HTMLAttributes<HTMLHeadingElement>) => (
 	<SectionHeading {...props} />
 ))`
 	color:black;
@@ -21,18 +23,18 @@ export const Heading = styled((props) => (
 	text-align: center;
 `;
 
-export const SubHeading = styled((props) => <SectionSubheading {...props} />)`
+export const SubHeading = styled((props: HTMLAttributes<HTMLHeadingElement>) => <SectionSubheading {...props} />)`
 	color: black;
 	margin: 0;
 	text-align: center;
 `;
-export const ImageWrapper = styled((props) => <div {...props} />)`
+export const ImageWrapper = styled((props: HTMLAttributes<HTMLDivElement>) => <div {...props} />)`
 	height: 100%
 	display: flex;
 	justify-content: center;
 `;
 
-export const InfoContainer = styled((props) => <StyledSectionContainer {...props} />)`
+export const InfoContainer = styled((props: HTMLAttributes<HTMLHeadingElement>) => <StyledSectionContainer {...props} />)`
 	display: flex;
   flex-direction: row;
   justify-content: center;
@@ -47,7 +49,7 @@ export const InfoContainer = styled((props) => <StyledSectionContainer {...props
   }
 `;
 
-export const CardsContainer = styled((props) => <div {...props} />)`
+export const CardsContainer = styled((props: HTMLAttributes<HTMLDivElement>) => <div {...props} />)`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
