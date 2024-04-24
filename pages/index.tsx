@@ -10,7 +10,7 @@ const heroProps = {
 };
 
 const mainProps = {
-  image: { src: "/img/video.png", alt: "video", width: 394, height: 600 },
+  image: { src: "/img/video.png", alt: "video", width: 394, height: 550 },
   cardsData: [
     {
       id: 1,
