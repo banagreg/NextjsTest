@@ -6,11 +6,16 @@ import { SectionHeading } from '../../components/Typography/SectionHeading'
 export const MainContainer = styled((props) => <div {...props} />)`
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex-direction: column;
 	margin: 5rem auto;
 	background-image: url('/img/background.png');
 	background-repeat: no-repeat;
   background-size: contain;
+
+	@media screen and (max-width: 1024px) {
+    padding: 0 1rem;
+  }
 `;
 
 export const Heading = styled((props) => (
@@ -28,8 +33,6 @@ export const SubHeading = styled((props) => <SectionSubheading {...props} />)`
 `;
 export const ImageWrapper = styled((props) => <div {...props} />)`
 	height: 100%
-	display: flex;
-	justify-content: center;
 `;
 
 export const InfoContainer = styled((props) => <StyledSectionContainer {...props} />)`
@@ -53,7 +56,6 @@ export const CardsContainer = styled((props) => <div {...props} />)`
 	justify-content: center;
 	gap: 2rem;
 	max-width: 500px;
-
 
 & > :nth-child(1) {
 	width: 80%;

@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-export const CardContainer = styled(({ ...props }) => <div {...props} />)`
+export const CardContainer = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
@@ -12,28 +12,38 @@ export const CardContainer = styled(({ ...props }) => <div {...props} />)`
     border: 3px solid #006EFD;
     color: #006EFD;
     cursor: pointer;
-}
+  }
 `;
-export const CardInnerHeading = styled(({ ...props }) => <h1 {...props} />)`
+
+export const CardInnerHeading = styled.h1`
   font-family: Poppins;
   font-weight: 700;
   font-size: 1.20rem;
   margin-bottom: 0;
 
-${CardContainer}:hover & {
-	text-decoration: underline;
-}
+  ${CardContainer}:hover & {
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem; /* Decrease font size for smaller screens */
+  }
 `;
-export const CardInnerText = styled((props) => <p {...props} />)`
+
+export const CardInnerText = styled.p`
   font-family: Poppins;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
   color: black;
-	margin-top: 5px;
+  margin-top: 5px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 0.9rem; /* Decrease font size for smaller screens */
+  }
 `;
 
-export const CardInfoContainer = styled(({ ...props }) => <div {...props} />)`
+export const CardInfoContainer = styled.div`
   display: flex;
   flex-grow: 1; 
   flex-direction: column;
@@ -41,7 +51,7 @@ export const CardInfoContainer = styled(({ ...props }) => <div {...props} />)`
   padding-right: 20px;
 `;
 
-export const ImageContainer = styled(({ ...props }) => <div {...props} />)`
+export const ImageContainer = styled.div`
   display: flex;
   max-width: 5rem;
   max-height: 5rem;
@@ -50,4 +60,9 @@ export const ImageContainer = styled(({ ...props }) => <div {...props} />)`
   justify-content: center;
   align-self: center;
   padding: 2rem;
+
+  @media screen and (max-width: 768px) {
+    max-width: 4rem; /* Decrease max-width for smaller screens */
+    max-height: 4rem; /* Decrease max-height for smaller screens */
+  }
 `;
