@@ -10,7 +10,6 @@ import {
 
 export const Card = ({ card }) => {
   const { image, title, description } = card;
-  const boldedDescription = description.replace(/<b>(.*?)<\/b>/g, '<b>$1</b>');
 
   return (
     <CardContainer>
@@ -25,7 +24,7 @@ export const Card = ({ card }) => {
       <CardInfoContainer>
         <CardInnerHeading>{card.title}</CardInnerHeading>
         <CardInnerText
-          dangerouslySetInnerHTML={{ __html: boldedDescription }}
+          dangerouslySetInnerHTML={{ __html: description }}
         />
       </CardInfoContainer>
     </CardContainer>
