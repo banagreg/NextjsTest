@@ -1,6 +1,6 @@
-import { FC } from "react";
-import { ThemeProvider } from "styled-components";
-import { theme } from "../styles/theme";
+import { FC } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../styles/theme';
 
 interface MyAppProps {
   Component: FC<any>;
@@ -13,8 +13,6 @@ const MyApp: FC<MyAppProps> = ({ Component, pageProps }) => {
       <Component {...pageProps} />
     </ThemeProvider>
   );
-}
+};
 
 export default MyApp;
-
-

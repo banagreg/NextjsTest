@@ -1,25 +1,27 @@
 export interface CardProps {
-	id: number;
-	image: ImageProps;
-	title: string;
-	description: string;
+  id: number;
+  image: ImageProps;
+  title: string;
+  description: string;
 }
 
 export interface ImageProps {
-	src: string;
-	alt: string;
-	width: number;
-	height: number;
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
 }
 
 export interface MainProps {
-	image: ImageProps;
-	cardsData: CardProps[];
+  title: string;
+  subTitle: string;
+  image: ImageProps;
+  cardsData: CardProps[];
 }
 
 export interface HeroProps {
-	image: ImageProps;
-	title: string;
-	description: string;
-	ctaText: string;
+  image: ImageProps;
+  title: string;
+  description: string;
+  ctaText: string;
 }

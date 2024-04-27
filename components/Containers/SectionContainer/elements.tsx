@@ -1,5 +1,5 @@
-import { HTMLAttributes } from "react";
-import styled from "styled-components";
+import { HTMLAttributes } from 'react';
+import styled from 'styled-components';
 
 interface StyledSectionContainerProps extends HTMLAttributes<HTMLDivElement> {
   topMargin?: number;

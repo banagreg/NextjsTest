@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 import {
   StyledTextContainer,
   StyledContainer,
@@ -7,11 +7,17 @@ import {
   StyledDescription,
   StyledCTAContainer,
   StyledImageContainer,
-} from "./elements";
-import { FC } from "react";
-import { HeroProps } from "../../types/types";
+} from './elements';
+import { FC } from 'react';
+import { HeroProps } from '../../types/types';
 
-export const Hero: FC<HeroProps> = ({ image, title, description, ctaText, ...props }) => {
+export const Hero: FC<HeroProps> = ({
+  image,
+  title,
+  description,
+  ctaText,
+  ...props
+}) => {
   return (
     <StyledContainer {...props}>
       <StyledTextContainer>
@@ -22,7 +28,13 @@ export const Hero: FC<HeroProps> = ({ image, title, description, ctaText, ...pro
         </StyledCTAContainer>
       </StyledTextContainer>
       <StyledImageContainer>
-        <Image layout="responsive" src={image.src} alt={image.alt} width={image.width} height={image.height} />
+        <Image
+          layout="responsive"
+          src={image.src}
+          alt={image.alt}
+          width={image.width}
+          height={image.height}
+        />
       </StyledImageContainer>
     </StyledContainer>
   );

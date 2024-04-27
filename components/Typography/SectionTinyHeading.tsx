@@ -1,8 +1,10 @@
-import { FC, HTMLAttributes } from "react";
-import { StyledSectionTinyHeading } from "./elements";
+import { FC, HTMLAttributes } from 'react';
+import { StyledSectionTinyHeading } from './elements';
 
-interface SectionTinyHeadingProps extends HTMLAttributes<HTMLHeadingElement> { }
+interface SectionTinyHeadingProps extends HTMLAttributes<HTMLHeadingElement> {}
 
-export const SectionTinyHeading: FC<SectionTinyHeadingProps> = ({ ...props }) => {
+export const SectionTinyHeading: FC<SectionTinyHeadingProps> = ({
+  ...props
+}) => {
   return <StyledSectionTinyHeading {...props} />;
 };
