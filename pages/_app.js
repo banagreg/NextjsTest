@@ -1,5 +1,5 @@
-import { ThemeProvider } from "styled-components";
-import { theme } from "../styles/theme";
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../styles/theme';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -10,5 +10,3 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
-
-

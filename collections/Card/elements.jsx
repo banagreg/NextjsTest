@@ -9,8 +9,8 @@ export const CardContainer = styled.div`
   border: 3px solid transparent;
 
   &:hover {
-    border: 3px solid #006EFD;
-    color: #006EFD;
+    border: 3px solid #006efd;
+    color: #006efd;
     cursor: pointer;
   }
 `;
@@ -18,7 +18,7 @@ export const CardContainer = styled.div`
 export const CardInnerHeading = styled.h1`
   font-family: Poppins;
   font-weight: 700;
-  font-size: 1.20rem;
+  font-size: 1.2rem;
   margin-bottom: 0;
 
   ${CardContainer}:hover & {
@@ -45,7 +45,7 @@ export const CardInnerText = styled.p`
 
 export const CardInfoContainer = styled.div`
   display: flex;
-  flex-grow: 1; 
+  flex-grow: 1;
   flex-direction: column;
   justify-content: center;
   padding-right: 20px;
