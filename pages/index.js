@@ -10,6 +10,8 @@ const heroProps = {
 };
 
 const mainProps = {
+  title: 'Managed agency selection',
+  subTitle: 'Strengthen your onboarding process',
   image: { src: '/img/video.png', alt: 'video', width: 394, height: 550 },
   cardsData: [
     {

@@ -9,12 +9,12 @@ import {
 } from './elements';
 import { Card } from '../../collections/Card/Card';
 export const Main = (props) => {
-  const { image, cardsData } = props;
+  const { title, subTitle, image, cardsData } = props;
 
   return (
     <MainContainer>
-      <Heading>Managed agency selection</Heading>
-      <SubHeading>Strengthen your onboarding process</SubHeading>
+      <Heading>{title}</Heading>
+      <SubHeading>{subTitle}</SubHeading>
 
       <InfoContainer>
         <ImageWrapper>
